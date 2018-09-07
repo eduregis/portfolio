@@ -1,0 +1,47 @@
+/* cabeçalho, cntendo o meu nome, abas de navegação e links para rede sociais*/
+#cabecalho{
+    border: solid;
+    border-color: blue;
+    padding-left: 5.9%;
+}
+#cabecalho div{
+    display: inline-block;
+    vertical-align: middle;
+}
+/*meu nome*/
+#autor{
+    border: solid;
+    font-size: 200%;    
+    margin-right: 11.9%;
+}
+#autor h1{    
+    margin: 0px;
+    color: #212121;
+}
+/*abas de navegação*/
+#abas{
+    border: solid;    
+    font-size: 130%;
+    margin-right: 11.9%;
+}
+#menu ul { list-style: none; }
+#menu ul li { 
+    display: inline; 
+    padding-right: 10px;
+}
+#menu ul li a {    
+    color: #333;
+    text-decoration: underline;
+}
+/*redes sociais*/
+#redes-sociais{
+    border: solid;    
+    margin-right: 5.9%;
+}
+#redes-sociais ul{
+    list-style: none;
+}
+#redes-sociais ul li { 
+    display: inline; 
+    padding-right: 10px;
+}
