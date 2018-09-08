@@ -1,7 +1,6 @@
 /* cabeçalho, cntendo o meu nome, abas de navegação e links para rede sociais*/
 #cabecalho{
-    border: solid;
-    border-color: blue;
+    background-color: #00a8ec;
     padding-left: 5.9%;
 }
 #cabecalho div{
@@ -10,38 +9,59 @@
 }
 /*meu nome*/
 #autor{
-    border: solid;
-    font-size: 200%;    
+    font-size: 150%;    
     margin-right: 11.9%;
 }
 #autor h1{    
     margin: 0px;
     color: #212121;
 }
-/*abas de navegação*/
-#abas{
-    border: solid;    
-    font-size: 130%;
+/*abas de navegação. Tamanhos na fonte certa: 42px 29px*/
+#abas{ 
     margin-right: 11.9%;
 }
-#menu ul { list-style: none; }
-#menu ul li { 
-    display: inline; 
-    padding-right: 10px;
+#menu a{    
+    display: inline-block;
+    color: #212121;
 }
-#menu ul li a {    
-    color: #333;
-    text-decoration: underline;
-}
+#portfolio{padding-right: 29px; }
+#sobre{ padding-left: 29px; padding-right: 29px; }
+#contato{ padding-left: 29px; }
 /*redes sociais*/
 #redes-sociais{
-    border: solid;    
-    margin-right: 5.9%;
+    border: none;    
+    margin-right: 5.9%;    
 }
-#redes-sociais ul{
-    list-style: none;
+#redes-sociais a{ 
+    display: inline-block; 
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-#redes-sociais ul li { 
-    display: inline; 
-    padding-right: 10px;
+#facebook-icon{padding-right: 24px; }
+#github-icon{ padding-left: 24px; padding-right: 24px; }
+#linkedin-icon{ padding-left: 24px; }
+
+/*corpo da home*/
+#fundo{
+    border: solid;
+    border-color: #141414;
+    background-color: #141414;
+    height: 820px;
+    margin: 0px 0px 0px 0px;
+}
+#corpo{
+    background-color: #212121;
+    height: 688px;
+    margin: 66px 0px 66px 0px;
+}
+#corpo div{
+    margin-left: 5.9%;
+    display: inline-grid;
+}
+.projeto{
+    margin-top: 58px;
+    border: solid;
+    border-color: orange;    
+    width: 748px;
+    height: 255px;
 }
