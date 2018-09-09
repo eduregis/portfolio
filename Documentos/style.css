@@ -44,7 +44,7 @@
 #github-icon{ padding-left: 24px; padding-right: 24px; }
 #linkedin-icon{ padding-left: 24px; }
 
-/*corpo da home*/
+/*corpo da aba 'portfólio'*/
 #fundo{
     border: solid;
     border-color: #141414;
@@ -78,37 +78,35 @@
     left: 0px;
     padding: 10px; 
 }
-
 /*corpo da aba 'sobre'*/
 #corpo-sobre{
     background-color: #212121;
     height: 688px;
-    margin: 66px 0px 66px 0px;    
+    margin: 66px 0px 66px 0px;
+    color: #00a8ec;
+    font-size: 130%;
 }
-#corpo-home div{    
-    display: inline;
+#corpo-sobre p{
+    color: #777777;
 }
 #bloco-sobre-1{
-    border: solid;
-    border-color: #00a8ec;
-    width: 395px;
-    display: inline-block;
+    margin-top: 25px;
     margin-left: 5.9%;
-    margin-top: 50px;
-}
-#bloco-sobre-2{    
-    border: solid;
-    border-color: #00a8ec;
+    float: left;
     width: 395px;
-    display: inline-block;
-    margin-left: 11.2%;
-    margin-top: 50px;
 }
-#bloco-sobre-3{    
-    border: solid;
-    border-color: #00a8ec;
-    width: 395px;
-    display: inline-block;
-    margin-left: 11.2%;
-    margin-top: 50px;
+#bloco-sobre-2{
+    margin-top: 30px;
+    margin-right: 9.1%;
+    float: right;
+    width: 1000px;
+}
+#bloco-sobre-2-1{
+    float: left;
+    width: 470px;
+}
+#bloco-sobre-2-2{
+    margin-right: 11%;
+    float: right;
+    width: 200px;
 }
