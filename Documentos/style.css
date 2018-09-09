@@ -1,36 +1,39 @@
 /* cabeçalho, cntendo o meu nome, abas de navegação e links para rede sociais*/
 #cabecalho{
-    background-color: #00a8ec;
-    padding-left: 5.9%;
+    background-color: #00a8ec;    
 }
 #cabecalho div{
     display: inline-block;
     vertical-align: middle;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
 }
 /*meu nome*/
 #autor{
-    font-size: 150%;    
-    margin-right: 11.9%;
+    font-size: 150%;
 }
 #autor h1{    
     margin: 0px;
     color: #212121;
 }
 /*abas de navegação. Tamanhos na fonte certa: 42px 29px*/
-#abas{ 
-    margin-right: 11.9%;
-}
 #menu a{    
-    display: inline-block;
+    display: inline-block;    
     color: #212121;
+    text-decoration: none;    
+}
+#menu a:hover {
+    color: #494949;
+}
+#ativo{
+    text-decoration: underline;
 }
 #portfolio{padding-right: 29px; }
 #sobre{ padding-left: 29px; padding-right: 29px; }
 #contato{ padding-left: 29px; }
 /*redes sociais*/
 #redes-sociais{
-    border: none;    
-    margin-right: 5.9%;    
+    border: none;     
 }
 #redes-sociais a{ 
     display: inline-block; 
@@ -49,19 +52,63 @@
     height: 820px;
     margin: 0px 0px 0px 0px;
 }
-#corpo{
+#corpo-home{
     background-color: #212121;
     height: 688px;
     margin: 66px 0px 66px 0px;
 }
-#corpo div{
+#corpo-home div{
     margin-left: 5.9%;
     display: inline-grid;
 }
 .projeto{
     margin-top: 58px;
     border: solid;
-    border-color: orange;    
+    border-color: #00a8ec;    
     width: 748px;
     height: 255px;
+    display: inline-block;
+    position: relative;
+}
+.titulo-projeto{
+    background-color: #00a8ec; 
+    margin-top: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px; 
+}
+
+/*corpo da aba 'sobre'*/
+#corpo-sobre{
+    background-color: #212121;
+    height: 688px;
+    margin: 66px 0px 66px 0px;    
+}
+#corpo-home div{    
+    display: inline;
+}
+#bloco-sobre-1{
+    border: solid;
+    border-color: #00a8ec;
+    width: 395px;
+    display: inline-block;
+    margin-left: 5.9%;
+    margin-top: 50px;
+}
+#bloco-sobre-2{    
+    border: solid;
+    border-color: #00a8ec;
+    width: 395px;
+    display: inline-block;
+    margin-left: 11.2%;
+    margin-top: 50px;
+}
+#bloco-sobre-3{    
+    border: solid;
+    border-color: #00a8ec;
+    width: 395px;
+    display: inline-block;
+    margin-left: 11.2%;
+    margin-top: 50px;
 }
