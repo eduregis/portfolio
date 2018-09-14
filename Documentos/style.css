@@ -1,17 +1,19 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 /* cabeçalho, cntendo o meu nome, abas de navegação e links para rede sociais*/
 #cabecalho{
     background-color: #00a8ec;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
     padding-left: 5.6%;
-    padding-right: 5.6%;
-}
-#cabecalho div{
-    display: inline-block;
-    vertical-align: middle;    
+    padding-right: 5.6%;  
 }
 /*meu nome*/
 #autor{
     font-size: 150%;
-    padding-right: 15.2%;
 }
 #autor h1{    
     margin: 0px;
@@ -32,19 +34,18 @@
 #portfolio{padding-right: 29px; }
 #sobre{ padding-left: 29px; padding-right: 29px; }
 #contato{ padding-left: 29px; }
-/*redes sociais*/
-#redes-sociais{   
-    float: right;   
+#menu-compacto{
+    display: none;
 }
+/*redes sociais*/
 #redes-sociais a{ 
     display: inline-block; 
-    padding-top: 10px;
 }
 #facebook-icon{padding-right: 24px; }
 #github-icon{ padding-left: 24px; padding-right: 24px; }
 #linkedin-icon{ padding-left: 24px; }
 /*corpo da aba 'portfólio'*/
-#fundo{
+#fundo-home{
     border: solid;
     border-color: #141414;
     background-color: #141414;
@@ -55,17 +56,10 @@
     background-color: #212121;
     height: 688px;
     margin: 66px 0px 66px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
-#coluna-1{
-    margin-left: 5.6%;
-    float: left;
-}
-#coluna-2{
-    margin-right: 5.6%;
-    float: right;
-}
-
 .projeto{
     margin-top: 58px;
     border: solid;
@@ -87,82 +81,70 @@
     padding: 10px; 
 }
 /*corpo da aba 'sobre'*/
+#fundo-sobre{
+    border: solid;
+    border-color: #141414;
+    background-color: #141414;
+    height: 820px;
+    margin: 0px 0px 0px 0px;
+}
 #corpo-sobre{
     background-color: #212121;
     height: 688px;
     margin: 66px 0px 66px 0px;
     color: #00a8ec;
     font-size: 130%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 #corpo-sobre p{
     color: #777777;
 }
-
-#corpo-sobre div{    
-    display: inline-block;
-}
 #bloco-sobre-1{    
-    margin-top: 25px;
-    margin-left: 15.9%;
-    float: left;
     width: 395px;
 }
-
-#bloco-sobre-2{
-    margin-top: 25px; 
-    width: 480px;
-    float: right;
-    margin-right: 15.9%;
+#bloco-sobre-2{    
+    width: 480px;    
+}
+/*corpo da aba 'contato'*/
+#fundo-contato{
+    border: solid;
+    border-color: #141414;
+    background-color: #141414;
+    height: 820px;
+    margin: 0px 0px 0px 0px;
+}
+#corpo-contato{
+    background-color: #212121;
+    height: 688px;
+    margin: 66px 0px 66px 0px;
 }
 /*Ajustes de responsividade*/
-/*para telas menores que 1737px de largura*/
-@media screen and (max-width: 1737px) {
-  #cabecalho {
-    background-color: yellow;        
-  }
-  #autor{
-    padding-right: 11.2%;
-  }
-  #fundo{
-    height: 1480px;
-  }
-  #corpo-home{
-    height: 1348px;
-  }
-  #corpo-home div{
-    margin-left: 17%;
-  }
-  #coluna-2{
-    float: left;
-    margin-left: 5.6%;
-    margin-right: 0%;    
-  }
-}
-/*para telas menores que 1462px de largura*/
-@media screen and (max-width: 1462px) {
-  #cabecalho {
-    background-color: tan;            
-  }  
-  #bloco-sobre-1{
-    margin-left: 11.2%;
-  }
-  #bloco-sobre-2{
-    margin-right: 11.2%;
-  }
+/*Quando o menu não tem mais espaço interno, a coluna da esquerda*/
+@media screen and (max-width: 1280px){  
   #redes-sociais{
-    visibility: hidden;
-  }
+    display: none;
+  } 
 }
-/*para telas menores que 1462px de largura*/
-@media screen and (max-width: 1062px) {
-  #cabecalho {
-    background-color: green;            
+/*Quando o menu não tem mais espaço interno, substitui o menu normal pelo mobile*/
+@media screen and (max-width: 996px){    
+  #menu{
+    display: none;
+  }
+  #menu-compacto{
+    display: block;
+  }
+  #fundo-sobre{
+    height: 1340px;
+  }
+  #corpo-sobre{
+    padding-top: 14px;
+    height: 1200px;
+  }
+  #corpo-sobre-2{
+    width: 395px;
   }  
-  #bloco-sobre-2{
+}
 
-    margin-right: 5.6%;
-  }
-  #redes-sociais{
-    visibility: hidden;
-  }
-}
+
