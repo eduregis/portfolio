@@ -140,7 +140,8 @@ body{
   justify-content: space-around;
 }
 #corpo-projeto p{
-  color: #777777;
+  color: #999999;
+  font-size: medium;
 }
 #bloco-projeto-1{    
   width: 600px;
@@ -156,12 +157,13 @@ body{
 #grid{  
   display: grid;
   grid-template-columns: auto auto;
+  justify-content: center;
 }
 #grid img{
   border: solid;
   border-color: #00a8ec;
-  margin-top: 25px;
-  width: 375px;
+  margin: 25px 12px 0px 12px;
+  height: 234px;
   transition: 0.5s;
 }
 #grid img:hover{
@@ -182,6 +184,8 @@ body{
 }
 /*corpo da aba 'contato'*/
 #corpo-contato{
+  padding-left: auto;
+  padding-right: auto;
 }
 /*Ajustes de responsividade*/
 /*Quando os projetos ocupam toda a tela na home, eles ficam em cascata*/
