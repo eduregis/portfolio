@@ -3,9 +3,12 @@ body{
   padding: 0;
   background: #141414;
 }
+:root {
+  --main-clr: #00a8ec;
+}
 /* cabeçalho, cntendo o meu nome, abas de navegação e links para rede sociais*/
 #cabecalho{
-  background-color: #00a8ec;
+  background-color: var(--main-clr);
   display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -55,26 +58,33 @@ body{
 }
 #corpo-home{
   background-color: #212121;
-  height: 688px;
+  height: 608px;
   margin: 66px 0px 66px 0px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: space-around;
+  padding-left: 5.6%;
+  padding-right: 5.6%;
 }
 .projeto{
   margin-top: 58px;
   border: solid;
-  border-color: #00a8ec;    
-  width: 748px;
-  height: 255px;
+  border-color: var(--main-clr);    
+  width: 600px;
+  height: 204px;
   position: relative;
+  color: #212121;
+}
+.projeto:hover{
+  color: #494949;
 }
 .projeto img{
-  width:748px;
-  height: 255px;
+  width:600px;
+  height: 204px;
 }
-.titulo-projeto{
-  background-color: #00a8ec; 
+.titulo-projeto{  
+  background-color: #00a8ec;
+  color: ;
   margin-top: 0px;
   position: absolute;
   top: 0px;
@@ -93,7 +103,7 @@ body{
   background-color: #212121;
   height: 688px;
   margin: 66px 0px 66px 0px;
-  color: #00a8ec;
+  color: var(--main-clr);
   font-size: 130%;
   display: flex;
   flex-wrap: wrap;
@@ -133,7 +143,7 @@ body{
   background-color: #212121;
   height: 688px;
   margin: 66px 0px 66px 0px;
-  color: #00a8ec;
+  color: var(--main-clr);
   font-size: 130%;
   display: flex;
   flex-wrap: wrap;
@@ -148,7 +158,7 @@ body{
 }
 #bloco-projeto-1 img{
   border: solid;
-  border-color: #00a8ec;
+  border-color: var(--main-clr);
   width: 600px;
 }
 #bloco-projeto-2{    
@@ -161,15 +171,15 @@ body{
 }
 #grid img{
   border: solid;
-  border-color: #00a8ec;
+  border-color: var(--main-clr);
   margin: 25px 12px 0px 12px;
   height: 234px;
   transition: 0.5s;
 }
 #grid img:hover{
-  -webkit-transform: scale(1.7);
-  -ms-transform: scale(1.7);
-  transform: scale(1.7);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 #link-download{
   margin-left: 110px;    
@@ -180,22 +190,48 @@ body{
 }
 #link-download:hover{
   color: #212121;
-  background-color: #00a8ec;  
+  background-color: var(--main-clr);  
 }
 /*corpo da aba 'contato'*/
 #corpo-contato{
   padding-left: auto;
   padding-right: auto;
 }
+/*efeito de lightbox*/
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+}
+.lightbox img {
+  border: solid;
+  border-color: var(--main-clr);
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+.lightbox:target {
+  outline: none;
+  display: block;
+}
 /*Ajustes de responsividade*/
 /*Quando os projetos ocupam toda a tela na home, eles ficam em cascata*/
-@media screen and (max-width: 1527px){    
+@media screen and (max-width: 1367px){    
   #fundo-home{
     height: 1480px;
   }
   #corpo-home{
-    height: 1320px;
-    padding-bottom: 30px;
+    height: 1090px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
   }
 }
 /*Quando os containers da pagina do projeto se encostam, eles ficam em cascata*/
@@ -207,6 +243,7 @@ body{
     height: 1320px;
     padding-bottom: 30px;
   }
+  /*:root{ --main-clr: #333333;  }  */
 }
 /*Quando o menu não tem mais espaço interno, a coluna da esquerda*/
 @media screen and (max-width: 1280px){  
