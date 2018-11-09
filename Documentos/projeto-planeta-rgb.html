@@ -21,9 +21,14 @@
 		    <a id="contato" href = "contato.html"><h2>CONTATO</h2></a>
 		</nav>
 	</div>
-	<div id="menu-compacto">
+	<span id="menu-compacto" onclick="openNav1()">
 		<img src ="assets/menu_icon.png" width="50px" align="center">
-	</div>
+	</span>
+	<script>
+		function openNav1() {
+    		document.getElementById("menu-compacto-conteudo").style.display = "block";
+		}
+	</script>
 	<div id ="redes-sociais">
 		<a id="facebook-icon" href="https://www.facebook.com/luiseduardo.oliveira.9">
 			<img src ="assets/facebook_icon.png" width="50px" align="center"></a>
@@ -32,6 +37,13 @@
 		<a id="linkedin-icon" href="https://www.linkedin.com/in/lu%C3%ADs-eduardo-regis-oliveira-799330150/">
 			<img src ="assets/linkedin_icon.png" width="50px" align="center"></a>
 	</div>
+</div>
+<div id="menu-compacto-conteudo">
+	<a href = "index.html"><h2>PORTFÓLIO</h2></a>
+	<hr>
+	<a href="sobre.html"><h2>SOBRE</h2></a>
+	<hr>
+	<a href = "contato.html"><h2>CONTATO</h2></a>
 </div>
 <div id="fundo-projeto">
 	<div id="corpo-projeto">

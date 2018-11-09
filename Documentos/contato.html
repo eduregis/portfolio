@@ -21,9 +21,14 @@
 		    <a id="contato" href = "#"><h2 id="ativo">CONTATO</h2></a>
 		</nav>
 	</div>
-	<div id="menu-compacto">
+	<span id="menu-compacto" onclick="openNav1()">
 		<img src ="assets/menu_icon.png" width="50px" align="center">
-	</div>
+	</span>
+	<script>
+		function openNav1() {
+    		document.getElementById("menu-compacto-conteudo").style.display = "block";
+		}
+	</script>
 	<div id ="redes-sociais">
 		<a id="facebook-icon" href="https://www.facebook.com/luiseduardo.oliveira.9">
 			<img src ="assets/facebook_icon.png" width="50px" align="center"></a>
@@ -33,10 +38,28 @@
 			<img src ="assets/linkedin_icon.png" width="50px" align="center"></a>
 	</div>
 </div>
-<div id="fundo-contato">
-	<div id="corpo-contato">		
-		
+<div id="menu-compacto-conteudo">
+	<a href = "index.html"><h2>PORTFÓLIO</h2></a>
+	<hr>
+	<a href="sobre.html"><h2>SOBRE</h2></a>
+	<hr>
+	<a href = "#"><h2>CONTATO</h2></a>
+</div>
+<div id="corpo-contato">
+	<div id="formulario">
+		<form action=>
+			<h1>ENTRE EM CONTATO!</h1>
+			<label>Nome: </label><br>
+			<input type="text" id="nome" value="Seu nome.."><br><br>
+			<label>Email: </label><br>
+			<input type="email" id="email" value="Seu email.."><br><br>
+			<label>Assunto: </label><br>
+			<input type="text" id="assunto" value="Assunto do email.."><br><br>
+			<label>Mensagem: </label><br>
+			<input type="text" id="mensagem" value="Digite sua mensagem.."><br><br>
+			<input type="submit" class="enviar" value="Enviar">
+		</form>
 	</div>
-</div>  
+</div> 
 </body>
 </html>
