@@ -2,7 +2,13 @@ body{
   margin: 0;
   padding: 0;
   background: #141414;
+  font-family: 'Roboto', sans-serif;
 }
+
+hr{
+  border-color: black;
+}
+
 :root {
   --main-clr: #00a8ec;
 }
@@ -40,22 +46,41 @@ body{
 #contato{ padding-left: 29px; }
 #menu-compacto{
   display: none;
+  cursor:pointer;
+}
+#menu-compacto{
+  width: 50px;
+  align-content: center;
+}
+#menu-compacto-conteudo {
+    display: none;   
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 200px;   
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    background-color: var(--main-clr);
+    z-index: 1;
+}
+#menu-compacto-conteudo a{
+  text-decoration: none;
+  color: #212121;
 }
 /*redes sociais*/
 #redes-sociais a{ 
   display: inline-block; 
 }
+#redes-sociais a img{
+  width: 50px;
+  align-content: center;
+}
 #facebook-icon{padding-right: 24px; }
 #github-icon{ padding-left: 24px; padding-right: 24px; }
 #linkedin-icon{ padding-left: 24px; }
 /*corpo da aba 'portfólio'*/
-#fundo-home{
-  border: solid;
-  border-color: #141414;
-  background-color: #141414;
-  height: 820px;
-  margin: 0px 0px 0px 0px;
-}
 #corpo-home{
   background-color: #212121;
   height: 608px;
@@ -77,6 +102,7 @@ body{
 }
 .projeto:hover{
   color: #494949;
+  cursor:pointer;
 }
 .projeto img{
   width:600px;
@@ -84,7 +110,6 @@ body{
 }
 .titulo-projeto{  
   background-color: #00a8ec;
-  color: ;
   margin-top: 0px;
   position: absolute;
   top: 0px;
@@ -92,16 +117,9 @@ body{
   padding: 10px; 
 }
 /*corpo da aba 'sobre'*/
-#fundo-sobre{
-  border: solid;
-  border-color: #141414;
-  background-color: #141414;
-  height: 820px;
-  margin: 0px 0px 0px 0px;
-}
 #corpo-sobre{
   background-color: #212121;
-  height: 688px;
+  height: 648px;
   margin: 66px 0px 66px 0px;
   color: var(--main-clr);
   font-size: 130%;
@@ -115,30 +133,43 @@ body{
 #bloco-sobre-1{    
   width: 395px;
 }
+#bloco-sobre-1 img{
+  width: 60%;
+  border: solid;
+}
 #bloco-sobre-2{    
   width: 480px;    
 }
 /*corpo da aba 'contato'*/
-#fundo-contato{
-  border: solid;
-  border-color: #141414;
-  background-color: #141414;
-  height: 820px;
-  margin: 0px 0px 0px 0px;
-}
 #corpo-contato{
   background-color: #212121;
   height: 688px;
   margin: 66px 0px 66px 0px;
+  display: flex;
+  justify-content: center;
+}
+#formulario{
+  color: var(--main-clr);
+  margin-top: 60px;
+  margin-left: 15px;
+}
+#nome, #email, #assunto, #mensagem{
+  width: 100%;
+  color: var(--main-clr);
+  background-color: #212121;
+  border-color: var(--main-clr);
+}
+#enviar{
+  width: 70%;
+  border: solid;
+  text-align: center;
+  transition: 0.5s;
+}
+#enviar:hover{
+  color: #212121;
+  background-color: var(--main-clr);
 }
 /*corpo das abas 'projeto'*/
-#fundo-projeto{
-  border: solid;
-  border-color: #141414;
-  background-color: #141414;
-  height: 820px;
-  margin: 0px 0px 0px 0px;
-}
 #corpo-projeto{
   background-color: #212121;
   height: 688px;
@@ -191,11 +222,6 @@ body{
 #link-download:hover{
   color: #212121;
   background-color: var(--main-clr);  
-}
-/*corpo da aba 'contato'*/
-#corpo-contato{
-  padding-left: auto;
-  padding-right: auto;
 }
 /*efeito de lightbox*/
 .lightbox {

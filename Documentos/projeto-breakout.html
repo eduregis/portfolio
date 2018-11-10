@@ -4,9 +4,9 @@
 	<title>Eduardo Regis - Portfólio</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Portfólio do Eduardo Regis">
-	<meta name="keywords" content="HTML, CSS, XML,JavaScript">
 	<meta name="author" content="Eduardo Regis">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -21,39 +21,49 @@
 		    <a id="contato" href = "contato.html"><h2>CONTATO</h2></a>
 		</nav>
 	</div>
-	<div id="menu-compacto">
-		<img src ="assets/menu_icon.png" width="50px" align="center">
-	</div>
+	<span id="menu-compacto" onclick="openNav()">
+		<img src ="assets/menu_icon.png" alt="ícone de menu">
+	</span>
+	<script>
+		function openNav() {
+    		document.getElementById("menu-compacto-conteudo").style.display = "block";
+		}
+	</script>
 	<div id ="redes-sociais">
 		<a id="facebook-icon" href="https://www.facebook.com/luiseduardo.oliveira.9">
-			<img src ="assets/facebook_icon.png" width="50px" align="center"></a>
+			<img src ="assets/facebook_icon.png" alt="ícone do facebook"></a>
 		<a id="github-icon" href="https://github.com/eduregis">
-			<img src ="assets/github_icon.png" width="50px" align="center"></a>
+			<img src ="assets/github_icon.png" alt="ícone do github"></a>
 		<a id="linkedin-icon" href="https://www.linkedin.com/in/lu%C3%ADs-eduardo-regis-oliveira-799330150/">
-			<img src ="assets/linkedin_icon.png" width="50px" align="center"></a>
+			<img src ="assets/linkedin_icon.png" alt="ícone do linkedin"></a>
 	</div>
 </div>
-<div id="fundo-projeto">
-	<div id="corpo-projeto">
-		<div id ="bloco-projeto-1">			
-			<h1>BREAKOUT (REMAKE)</h1>
-			<img src="assets/processing_image.png">
-			<p>Assim como no clássico de Atari 2600, nesse jogo você controla uma barra na parte inferior da tela e deve rebater uma bola para quebrar todos os blocos que estão na parte de cima. Ganha o jogo se destruir todos os blocos e perde se deixar a bola cair 5 vezes.</p>				
-		</div>
-		<div id ="bloco-projeto-2">
-			<div id="grid">
-				<a href="#img1"><img src="assets/breakout_01.png"></a>
-				<a href="#img2"><img src="assets/breakout_02.png"></a>	
-				<a href="#img3"><img src="assets/breakout_03.png"></a>
-				<a href="#img4"><img src="assets/breakout_04.png"></a>	
-			</div><br>
-			<a href="#_" class="lightbox" id="img1"><img src="assets/breakout_01.png"></a>
-			<a href="#_" class="lightbox" id="img2"><img src="assets/breakout_02.png"></a>
-			<a href="#_" class="lightbox" id="img3"><img src="assets/breakout_03.png"></a>
-			<a href="#_" class="lightbox" id="img4"><img src="assets/breakout_04.png"></a>			
-			<h1 id="link-download">LINK PARA DOWNLOAD</h1>
-		</div>			
+<div id="menu-compacto-conteudo">
+	<a href = "index.html"><h2>PORTFÓLIO</h2></a>
+	<hr>
+	<a href="sobre.html"><h2>SOBRE</h2></a>
+	<hr>
+	<a href = "contato.html"><h2>CONTATO</h2></a>
+</div>
+<div id="corpo-projeto">
+	<div id ="bloco-projeto-1">			
+		<h1>BREAKOUT (REMAKE)</h1>
+		<img src="assets/processing_image.png" alt="capa do processing">
+		<p>Assim como no clássico de Atari 2600, nesse jogo você controla uma barra na parte inferior da tela e deve rebater uma bola para quebrar todos os blocos que estão na parte de cima. Ganha o jogo se destruir todos os blocos e perde se deixar a bola cair 5 vezes.</p>				
 	</div>
-</div>  
+	<div id ="bloco-projeto-2">
+		<div id="grid">
+			<a href="#img1"><img src="assets/breakout_01.png" alt="breakout - imagem 1"></a>
+			<a href="#img2"><img src="assets/breakout_02.png" alt="breakout - imagem 2"></a>	
+			<a href="#img3"><img src="assets/breakout_03.png" alt="breakout - imagem 3"></a>
+			<a href="#img4"><img src="assets/breakout_04.png" alt="breakout - imagem 4"></a>	
+		</div><br>
+		<a href="#_" class="lightbox" id="img1"><img src="assets/breakout_01.png" alt="breakout - imagem 1"></a>
+		<a href="#_" class="lightbox" id="img2"><img src="assets/breakout_02.png" alt="breakout - imagem 2"></a>
+		<a href="#_" class="lightbox" id="img3"><img src="assets/breakout_03.png" alt="breakout - imagem 3"></a>
+		<a href="#_" class="lightbox" id="img4"><img src="assets/breakout_04.png" alt="breakout - imagem 4"></a>		
+		<h1 id="link-download">LINK PARA DOWNLOAD</h1>
+	</div>			
+</div>
 </body>
 </html>

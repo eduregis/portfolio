@@ -4,9 +4,9 @@
 	<title>Eduardo Regis - Portfólio</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Portfólio do Eduardo Regis">
-	<meta name="keywords" content="HTML, CSS, XML,JavaScript">
 	<meta name="author" content="Eduardo Regis">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -21,31 +21,43 @@
 		    <a id="contato" href = "contato.html"><h2>CONTATO</h2></a>
 		</nav>
 	</div>
-	<div id="menu-compacto">
-		<img src ="assets/menu_icon.png" width="50px" align="center">
-	</div>
+	<span id="menu-compacto" onclick="openNav()">
+		<img src ="assets/menu_icon.png" alt="ícone de menu">
+	</span>
+	<script>
+		function openNav() {
+    		document.getElementById("menu-compacto-conteudo").style.display = "block";
+		}
+	</script>	
 	<div id ="redes-sociais">
 		<a id="facebook-icon" href="https://www.facebook.com/luiseduardo.oliveira.9">
-			<img src ="assets/facebook_icon.png" width="50px" align="center"></a>
+			<img src ="assets/facebook_icon.png" alt="ícone do facebook"></a>
 		<a id="github-icon" href="https://github.com/eduregis">
-			<img src ="assets/github_icon.png" width="50px" align="center"></a>
+			<img src ="assets/github_icon.png" alt="ícone do github"></a>
 		<a id="linkedin-icon" href="https://www.linkedin.com/in/lu%C3%ADs-eduardo-regis-oliveira-799330150/">
-			<img src ="assets/linkedin_icon.png" width="50px" align="center"></a>
+			<img src ="assets/linkedin_icon.png" alt="ícone do linkedin"></a>
 	</div>
+</div>
+<div id="menu-compacto-conteudo">
+	<a href = "index.html"><h2>PORTFÓLIO</h2></a>
+	<hr>
+	<a href="#"><h2>SOBRE</h2></a>
+	<hr>
+	<a href = "contato.html"><h2>CONTATO</h2></a>
 </div>
 <div id="fundo-sobre">
 	<div id="corpo-sobre">
 		<div id ="bloco-sobre-1">			
 			<h1>SOBRE MIM</h1>
-			<img src="assets/placeholder-foto-minha.png">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>				
+			<img src="assets/fotinha.png" alt="minha foto">
+			<p>Olá! Meu nome é Eduardo Regis, tenho 22 anos e sou programador back-end, com experiencia em front-end.</p>				
 		</div>
 		<div id ="bloco-sobre-2">
 			<h2>FORMAÇÃO</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			<p>Graduando em Sistemas e Mídias Digitais - Bacharelado (Noturno)</p>
 			<br>
 			<h2>HABILIDADES & INTERESSES</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>		
+			<p>Experiência nas linguagens Java, C, C++, HTML5, CSS3 e Javascript. Experiência no uso de frameworks como P5 e Angular. Experiência em modelagem de banco de dados com SQL. Interesses em desenvolver aplicativos para mobile e desktop. Interesses em ilustração e design de interfaces.</p>		
 		</div>			
 	</div>
 </div>  
