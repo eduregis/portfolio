@@ -48,13 +48,10 @@ hr{
   display: none;
   cursor:pointer;
 }
-<<<<<<< HEAD
 #menu-compacto{
   width: 50px;
   align-content: center;
 }
-=======
->>>>>>> 95a5bb9002b7dddd4f39e617185057055b6a3f9e
 #menu-compacto-conteudo {
     display: none;   
     position: fixed;
@@ -150,26 +147,6 @@ hr{
   margin: 66px 0px 66px 0px;
   display: flex;
   justify-content: center;
-<<<<<<< HEAD
-=======
-}
-#formulario{
-  color: var(--main-clr);
-  margin-top: 60px;
-  margin-left: 15px;
-}
-#nome, #email, #assunto, #mensagem{
-  width: 100%;
-  color: var(--main-clr);
-  background-color: #212121;
-  border-color: var(--main-clr);
-}
-.enviar{
-  width: 100px;
-  color: #212121;
-  background-color: var(--main-clr);
-  border-color: #212121;
->>>>>>> 95a5bb9002b7dddd4f39e617185057055b6a3f9e
 }
 #formulario{
   color: var(--main-clr);
